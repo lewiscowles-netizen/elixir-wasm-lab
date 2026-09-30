@@ -1,0 +1,15 @@
+{
+  "name": "elixir-wasm-lab",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Browser acceptance lab for source-built Elixir WebAssembly bundles",
+  "scripts": {
+    "serve": "python3 serve.py",
+    "test:e2e": "playwright test",
+    "docs:build": "node scripts/render-docs.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "markdown-it": "14.1.0"
+  }
+}

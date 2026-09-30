@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Elixir releases in a browser using a source-built WebAssembly BEAM runtime.">
+  <title>Elixir across versions · Wasm lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="../README.md">λ / runtime laboratory</a><span class="badge">LOCAL EXECUTION</span></header>
+    <div class="intro"><p class="eyebrow">ELIXIR × WEBASSEMBLY</p><h1>One language.<br>Many moments in time.</h1><p>Choose an Elixir release, write a script, and run it on BEAM in your browser. Trace the path from a small expression to a bundled application.</p><a href="docs/README.html">Explore the guides ↗</a></div>
+    <section class="panel" aria-labelledby="runtime-heading">
+      <div class="section-heading"><h2 id="runtime-heading"><span>01</span> Choose your runtime</h2><span id="count" class="muted">Loading catalogue…</span></div>
+      <div class="controls"><div class="field"><label for="backend">Runtime integration</label><select id="backend"><option value="direct">Direct OTP · no framework API</option><option value="popcorn">Popcorn</option><option value="atomvm">AtomVM</option></select></div><div class="field grow"><label for="version">Elixir release</label><select id="version" disabled></select></div><div class="field"><label for="target">Execution target</label><select id="target"><option value="browser">Browser · Emscripten</option><option value="wasi">WASI · command host</option></select></div><div class="field"><label for="timeout">Time limit</label><select id="timeout"><option value="30">30 seconds</option><option value="120" selected>2 minutes</option></select></div></div>
+      <p id="backend-info" class="muted"></p><p id="runtime-info" class="muted"></p><p id="requirements" role="status"></p>
+    </section>
+    <section class="panel" id="wasi-command" aria-labelledby="wasi-heading" hidden>
+      <h2 id="wasi-heading">Run with Wasmtime</h2>
+      <p><a id="wasi-download" download>Download WASI bundle</a> · <a href="docs/tutorials/06-wasi.html">Follow the WASI tutorial</a></p>
+      <pre id="wasi-instructions" tabindex="0" aria-label="WASI host commands"></pre>
+      <p class="muted fine" id="wasi-checksum"></p>
+    </section>
+    <section class="panel" aria-labelledby="editor-heading">
+      <div class="section-heading"><h2 id="editor-heading"><span>02</span> Try some code</h2><div class="field"><label for="example">Example</label><select id="example"><option value="hello">Version & arithmetic</option><option value="processes">Processes & messages</option><option value="modules">Define a module</option><option value="files">Ephemeral files</option><option value="errors">Errors & recovery</option><option value="loop">Stop a long task</option></select></div></div>
+      <label class="sr-only" for="code">Elixir source code</label><textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" rows="12"></textarea>
+      <div class="actions"><button id="run" disabled>Run Elixir <span>↗</span></button><button id="stop" class="secondary" disabled>Stop</button><span id="status" role="status" aria-live="polite">Loading catalogue…</span></div>
+      <p class="muted fine" id="execution-note">Each run starts a fresh VM. Files are temporary. Execution uses your browser; no AI or compilation server is involved.</p>
+    </section>
+    <section class="panel" aria-labelledby="output-heading"><div class="section-heading"><h2 id="output-heading"><span>03</span> Inspect the result</h2><button id="clear" class="secondary">Clear output</button></div><div class="outputs"><div><h3>STANDARD OUTPUT</h3><pre id="stdout" tabindex="0" aria-label="Standard output"></pre></div><div><h3>STANDARD ERROR</h3><pre id="stderr" tabindex="0" aria-label="Standard error"></pre></div></div></section>
+    <footer><a href="docs/README.html">Tutorials, how-to, reference & explanations</a><p id="provenance">Runtime files stay on this server.</p></footer>
+  </main><script type="module" src="app.mjs"></script>
+</body>
+</html>

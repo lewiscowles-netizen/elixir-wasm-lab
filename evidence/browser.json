@@ -1,0 +1,1381 @@
+{
+  "schemaVersion": 1,
+  "time": "2026-09-29T17:59:50.317Z",
+  "status": "passed",
+  "scope": "Chromium browser execution with external HTTP requests blocked",
+  "labSourceHashes": {
+    "web/worker.mjs": "7bb832779bcc25f2b5a35bddf38569b4237870f6d1fa844f0908afda89a4c0ff",
+    "web/atomvm-worker.mjs": "f2203016bc8ff479c505fa77f37c438feec988695c4e28ad50542062d02d619c",
+    "web/popcorn-adapter.mjs": "27dcd82c44ceebdae4eb32cea731d40f926a9fc027b2b9bc3902be0e0db4e1c5",
+    "web/app.mjs": "56e48ee5db874bb774c13ec8b3895cb551db8d0432decb91177019f35fc0335a",
+    "web/index.html": "5199ccb4f95c6b429a127c166b144e17121243bbdda82cf039278736712244ed",
+    "tests/browser.spec.cjs": "4fbfbdc44290055d1cd5114052f8400682632f2a9c4d54ea3a78d7c5b2115fa3",
+    "tests/evidence-reporter.cjs": "cb5e8445b31c0491a76a3f0e30f20c21fd37d01f6cfeb887d62cbd85ecc76d61",
+    "playwright.config.cjs": "bb0ffb40ce92e475e3d0384f157bc6e6197cb901d7ea56c7049293baa5962ebd",
+    "serve.py": "4ea24a4db629371b08c8e9bd2cdc8c496d29c55dc13e846a30d5f2f7e2a56f6b"
+  },
+  "results": [
+    {
+      "name": "execute 1.20.4 without external network",
+      "status": "passed",
+      "durationMs": 1313,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.20.4",
+          "application": null,
+          "version": "1.20.4",
+          "otp": "29.0.6",
+          "profile": "core",
+          "compilerOtp": "29.0.6",
+          "directory": "runtimes/1.20.4-ddf91375eebdabfd/",
+          "status": "built",
+          "manifestSha256": "ddf91375eebdabfd676fa63ccfcdf5dd2cc584630d839026906a90398528ae4c"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "ddf91375eebdabfd676fa63ccfcdf5dd2cc584630d839026906a90398528ae4c",
+        "result": {
+          "status": "Completed · exit 0 · 0.43 s",
+          "stdout": "VERSION=1.20.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.20.4-receipts without external network",
+      "status": "passed",
+      "durationMs": 1300,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.20.4-receipts",
+          "application": "receipts",
+          "version": "1.20.4",
+          "otp": "29.0.6",
+          "profile": "core",
+          "compilerOtp": "29.0.6",
+          "directory": "runtimes/1.20.4-receipts-2cd2a95155e48fbc/",
+          "status": "built",
+          "manifestSha256": "2cd2a95155e48fbc8a2df09af8a46fe29e844991dcd7cdb3540be73cf750a184"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "2cd2a95155e48fbc8a2df09af8a46fe29e844991dcd7cdb3540be73cf750a184",
+        "result": {
+          "status": "Completed · exit 0 · 0.40 s",
+          "stdout": "VERSION=1.20.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": {
+        "status": "Completed · exit 0 · 0.22 s",
+        "stdout": "2000\n300\n[2000, 300]\nA receipt from your browser\n\n\n=> :ok\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "execute 1.2.0 without external network",
+      "status": "passed",
+      "durationMs": 978,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.2.0",
+          "application": null,
+          "version": "1.2.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.2.0-807894486b842fd0/",
+          "status": "built",
+          "manifestSha256": "807894486b842fd0e87b62c0c35671b9681ba077b7345a5c68a173002b83d11f"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "807894486b842fd0e87b62c0c35671b9681ba077b7345a5c68a173002b83d11f",
+        "result": {
+          "status": "Completed · exit 0 · 0.45 s",
+          "stdout": "VERSION=1.2.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.2.6 without external network",
+      "status": "passed",
+      "durationMs": 1006,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.2.6",
+          "application": null,
+          "version": "1.2.6",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.2.6-44556dd409dcc8e5/",
+          "status": "built",
+          "manifestSha256": "44556dd409dcc8e56738b9991b3da1f4b955c174f6e57ee5cce566677fd2e5ab"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "44556dd409dcc8e56738b9991b3da1f4b955c174f6e57ee5cce566677fd2e5ab",
+        "result": {
+          "status": "Completed · exit 0 · 0.49 s",
+          "stdout": "VERSION=1.2.6\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.1.0 without external network",
+      "status": "passed",
+      "durationMs": 998,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.1.0",
+          "application": null,
+          "version": "1.1.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "17.5",
+          "directory": "runtimes/1.1.0-c6c1e04246b45a34/",
+          "status": "built",
+          "manifestSha256": "c6c1e04246b45a34c03860e6b359d30f05ba0eddbdde2a15898ad2fe74236037"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "c6c1e04246b45a34c03860e6b359d30f05ba0eddbdde2a15898ad2fe74236037",
+        "result": {
+          "status": "Completed · exit 0 · 0.42 s",
+          "stdout": "VERSION=1.1.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.1.1 without external network",
+      "status": "passed",
+      "durationMs": 981,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.1.1",
+          "application": null,
+          "version": "1.1.1",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "17.5",
+          "directory": "runtimes/1.1.1-fd22e3bcd309a6de/",
+          "status": "built",
+          "manifestSha256": "fd22e3bcd309a6de209f03782865ab6c64228b9eb824c08c4b8129939e812a7b"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "fd22e3bcd309a6de209f03782865ab6c64228b9eb824c08c4b8129939e812a7b",
+        "result": {
+          "status": "Completed · exit 0 · 0.40 s",
+          "stdout": "VERSION=1.1.1\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.3.0 without external network",
+      "status": "passed",
+      "durationMs": 1004,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.3.0",
+          "application": null,
+          "version": "1.3.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.3.0-6a099704a62f41ab/",
+          "status": "built",
+          "manifestSha256": "6a099704a62f41abe21ad5c0b507084de59ca4404bc2276daa5fba75eedf3b36"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "6a099704a62f41abe21ad5c0b507084de59ca4404bc2276daa5fba75eedf3b36",
+        "result": {
+          "status": "Completed · exit 0 · 0.43 s",
+          "stdout": "VERSION=1.3.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.3.4 without external network",
+      "status": "passed",
+      "durationMs": 1063,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.3.4",
+          "application": null,
+          "version": "1.3.4",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.3.4-88b1e9b2863c078c/",
+          "status": "built",
+          "manifestSha256": "88b1e9b2863c078c72bed0ac6520909dfeb947462e6787eaf6dbbaa4463dc300"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "88b1e9b2863c078c72bed0ac6520909dfeb947462e6787eaf6dbbaa4463dc300",
+        "result": {
+          "status": "Completed · exit 0 · 0.49 s",
+          "stdout": "VERSION=1.3.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.4.0 without external network",
+      "status": "passed",
+      "durationMs": 969,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.4.0",
+          "application": null,
+          "version": "1.4.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.4.0-e0469c4f8a6874df/",
+          "status": "built",
+          "manifestSha256": "e0469c4f8a6874dff8179f5c70c75f04f62c55dc472468ccfca8c90701f86bdd"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "e0469c4f8a6874dff8179f5c70c75f04f62c55dc472468ccfca8c90701f86bdd",
+        "result": {
+          "status": "Completed · exit 0 · 0.41 s",
+          "stdout": "VERSION=1.4.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.4.5 without external network",
+      "status": "passed",
+      "durationMs": 1106,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.4.5",
+          "application": null,
+          "version": "1.4.5",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.4.5-b9e00109407427b6/",
+          "status": "built",
+          "manifestSha256": "b9e00109407427b6fc34d680e31b60067a1d1565744682c962903a8332efb652"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "b9e00109407427b6fc34d680e31b60067a1d1565744682c962903a8332efb652",
+        "result": {
+          "status": "Completed · exit 0 · 0.54 s",
+          "stdout": "VERSION=1.4.5\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.5.0 without external network",
+      "status": "passed",
+      "durationMs": 997,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.5.0",
+          "application": null,
+          "version": "1.5.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.5.0-2e4b1ef3c6038613/",
+          "status": "built",
+          "manifestSha256": "2e4b1ef3c60386130efeb3a93f2d473b44fa5983503a12bf16048339f0a2e856"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "2e4b1ef3c60386130efeb3a93f2d473b44fa5983503a12bf16048339f0a2e856",
+        "result": {
+          "status": "Completed · exit 0 · 0.43 s",
+          "stdout": "VERSION=1.5.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.5.3 without external network",
+      "status": "passed",
+      "durationMs": 988,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.5.3",
+          "application": null,
+          "version": "1.5.3",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "18.3",
+          "directory": "runtimes/1.5.3-e8766b6272588186/",
+          "status": "built",
+          "manifestSha256": "e8766b6272588186a70c214237d472b3f9e8152d47bd22cce9365be5a281357f"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "e8766b6272588186a70c214237d472b3f9e8152d47bd22cce9365be5a281357f",
+        "result": {
+          "status": "Completed · exit 0 · 0.45 s",
+          "stdout": "VERSION=1.5.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.0.0 without external network",
+      "status": "passed",
+      "durationMs": 963,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.0.0",
+          "application": null,
+          "version": "1.0.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "17.5",
+          "directory": "runtimes/1.0.0-dc295413fd0b68cd/",
+          "status": "built",
+          "manifestSha256": "dc295413fd0b68cd425b7b6ae42a57887d12138cbc51d7396b572c5f09c104b2"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "dc295413fd0b68cd425b7b6ae42a57887d12138cbc51d7396b572c5f09c104b2",
+        "result": {
+          "status": "Completed · exit 0 · 0.40 s",
+          "stdout": "VERSION=1.0.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.0.5 without external network",
+      "status": "passed",
+      "durationMs": 955,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.0.5",
+          "application": null,
+          "version": "1.0.5",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "17.5",
+          "directory": "runtimes/1.0.5-28cae77999429ec3/",
+          "status": "built",
+          "manifestSha256": "28cae77999429ec319bb7900614c0d0a87797b89f02516b54d3e5dee620b423b"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "28cae77999429ec319bb7900614c0d0a87797b89f02516b54d3e5dee620b423b",
+        "result": {
+          "status": "Completed · exit 0 · 0.44 s",
+          "stdout": "VERSION=1.0.5\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.6.0 without external network",
+      "status": "passed",
+      "durationMs": 995,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.6.0",
+          "application": null,
+          "version": "1.6.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "19.3",
+          "directory": "runtimes/1.6.0-72f9bd62e2e6b92d/",
+          "status": "built",
+          "manifestSha256": "72f9bd62e2e6b92d76d89c6d3f45324aae558fddef1564d7a3ad4a51a50e41aa"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "72f9bd62e2e6b92d76d89c6d3f45324aae558fddef1564d7a3ad4a51a50e41aa",
+        "result": {
+          "status": "Completed · exit 0 · 0.44 s",
+          "stdout": "VERSION=1.6.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.6.6 without external network",
+      "status": "passed",
+      "durationMs": 983,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.6.6",
+          "application": null,
+          "version": "1.6.6",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "19.3",
+          "directory": "runtimes/1.6.6-d61092a8d5cd8573/",
+          "status": "built",
+          "manifestSha256": "d61092a8d5cd8573fb90e92b94644805998ea0973c8edb0e29ecd4fa88572494"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "d61092a8d5cd8573fb90e92b94644805998ea0973c8edb0e29ecd4fa88572494",
+        "result": {
+          "status": "Completed · exit 0 · 0.42 s",
+          "stdout": "VERSION=1.6.6\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.7.0 without external network",
+      "status": "passed",
+      "durationMs": 1009,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.7.0",
+          "application": null,
+          "version": "1.7.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.7.0-672214b7e576ded9/",
+          "status": "built",
+          "manifestSha256": "672214b7e576ded94d4ffdc625863813e34a70d02ec97fc1348a39bc5731c20d"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "672214b7e576ded94d4ffdc625863813e34a70d02ec97fc1348a39bc5731c20d",
+        "result": {
+          "status": "Completed · exit 0 · 0.47 s",
+          "stdout": "VERSION=1.7.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.7.4 without external network",
+      "status": "passed",
+      "durationMs": 963,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.7.4",
+          "application": null,
+          "version": "1.7.4",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.7.4-d665639148c2a937/",
+          "status": "built",
+          "manifestSha256": "d665639148c2a937ee56bda8ae5e3fbc30692291246b3cfe4db93a06ffd9a85e"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "d665639148c2a937ee56bda8ae5e3fbc30692291246b3cfe4db93a06ffd9a85e",
+        "result": {
+          "status": "Completed · exit 0 · 0.45 s",
+          "stdout": "VERSION=1.7.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.8.0 without external network",
+      "status": "passed",
+      "durationMs": 987,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.8.0",
+          "application": null,
+          "version": "1.8.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.8.0-233546f83aed9f03/",
+          "status": "built",
+          "manifestSha256": "233546f83aed9f0358bd8b5340d43308ae58f725a72e4e46decbbf917e7c62e4"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "233546f83aed9f0358bd8b5340d43308ae58f725a72e4e46decbbf917e7c62e4",
+        "result": {
+          "status": "Completed · exit 0 · 0.43 s",
+          "stdout": "VERSION=1.8.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.8.2 without external network",
+      "status": "passed",
+      "durationMs": 1019,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.8.2",
+          "application": null,
+          "version": "1.8.2",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.8.2-f5c6e99ceebf981e/",
+          "status": "built",
+          "manifestSha256": "f5c6e99ceebf981e2f5a6072cba02bdc9bb17fee30787c65193f5838bd191f4d"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "f5c6e99ceebf981e2f5a6072cba02bdc9bb17fee30787c65193f5838bd191f4d",
+        "result": {
+          "status": "Completed · exit 0 · 0.46 s",
+          "stdout": "VERSION=1.8.2\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.9.0 without external network",
+      "status": "passed",
+      "durationMs": 1023,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.9.0",
+          "application": null,
+          "version": "1.9.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.9.0-c088f822d07bf0a7/",
+          "status": "built",
+          "manifestSha256": "c088f822d07bf0a774ccfccfffbdd9f347ce4e27d4d3870a26989eaee814d32e"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "c088f822d07bf0a774ccfccfffbdd9f347ce4e27d4d3870a26989eaee814d32e",
+        "result": {
+          "status": "Completed · exit 0 · 0.46 s",
+          "stdout": "VERSION=1.9.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.9.4 without external network",
+      "status": "passed",
+      "durationMs": 1035,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.9.4",
+          "application": null,
+          "version": "1.9.4",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.9.4-944173518a838f28/",
+          "status": "built",
+          "manifestSha256": "944173518a838f2805c9c6678f33b7136da2630641fb7f55bf110a29a976dbec"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "944173518a838f2805c9c6678f33b7136da2630641fb7f55bf110a29a976dbec",
+        "result": {
+          "status": "Completed · exit 0 · 0.51 s",
+          "stdout": "VERSION=1.9.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.10.0 without external network",
+      "status": "passed",
+      "durationMs": 1009,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.10.0",
+          "application": null,
+          "version": "1.10.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.10.0-2cc111091c4a995d/",
+          "status": "built",
+          "manifestSha256": "2cc111091c4a995d6d615463d595913bf5d309777eb3878034a1af13b9aa95f5"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "2cc111091c4a995d6d615463d595913bf5d309777eb3878034a1af13b9aa95f5",
+        "result": {
+          "status": "Completed · exit 0 · 0.43 s",
+          "stdout": "VERSION=1.10.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.10.4 without external network",
+      "status": "passed",
+      "durationMs": 973,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.10.4",
+          "application": null,
+          "version": "1.10.4",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.10.4-b1a94ed59f760887/",
+          "status": "built",
+          "manifestSha256": "b1a94ed59f76088724b12a2407c68cc1f030dc160567e2cb0c7b9b72ae125ffb"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "b1a94ed59f76088724b12a2407c68cc1f030dc160567e2cb0c7b9b72ae125ffb",
+        "result": {
+          "status": "Completed · exit 0 · 0.45 s",
+          "stdout": "VERSION=1.10.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.11.0 without external network",
+      "status": "passed",
+      "durationMs": 939,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.11.0",
+          "application": null,
+          "version": "1.11.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.11.0-730a52b9651b1aa7/",
+          "status": "built",
+          "manifestSha256": "730a52b9651b1aa7ebc5f8c2888ef1d3b9977e48578682393deff2e660ee8ead"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "730a52b9651b1aa7ebc5f8c2888ef1d3b9977e48578682393deff2e660ee8ead",
+        "result": {
+          "status": "Completed · exit 0 · 0.29 s",
+          "stdout": "VERSION=1.11.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.11.4 without external network",
+      "status": "passed",
+      "durationMs": 939,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.11.4",
+          "application": null,
+          "version": "1.11.4",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.11.4-3e7021edf5a058db/",
+          "status": "built",
+          "manifestSha256": "3e7021edf5a058db8760ee7089ab38c6cbda504a984226ac66dbd041a1c773b9"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "3e7021edf5a058db8760ee7089ab38c6cbda504a984226ac66dbd041a1c773b9",
+        "result": {
+          "status": "Completed · exit 0 · 0.35 s",
+          "stdout": "VERSION=1.11.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.12.0 without external network",
+      "status": "passed",
+      "durationMs": 983,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.12.0",
+          "application": null,
+          "version": "1.12.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.12.0-c8ab74e9f3afbde8/",
+          "status": "built",
+          "manifestSha256": "c8ab74e9f3afbde88bbaeea96e522859af9f03ec4a9a0b4618c4a8ad652ac8e4"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "c8ab74e9f3afbde88bbaeea96e522859af9f03ec4a9a0b4618c4a8ad652ac8e4",
+        "result": {
+          "status": "Completed · exit 0 · 0.32 s",
+          "stdout": "VERSION=1.12.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.12.3 without external network",
+      "status": "passed",
+      "durationMs": 959,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.12.3",
+          "application": null,
+          "version": "1.12.3",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.12.3-7ae70d60cbe8ef4e/",
+          "status": "built",
+          "manifestSha256": "7ae70d60cbe8ef4e066b387dfbd07a08e2f5843e85dfe9e38689afe4bea5f376"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "7ae70d60cbe8ef4e066b387dfbd07a08e2f5843e85dfe9e38689afe4bea5f376",
+        "result": {
+          "status": "Completed · exit 0 · 0.31 s",
+          "stdout": "VERSION=1.12.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.13.0 without external network",
+      "status": "passed",
+      "durationMs": 944,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.13.0",
+          "application": null,
+          "version": "1.13.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.13.0-015e026310d0f1b0/",
+          "status": "built",
+          "manifestSha256": "015e026310d0f1b04f43d02b5e4c5fff190899ee2026cde62ab3bd2b30276a81"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "015e026310d0f1b04f43d02b5e4c5fff190899ee2026cde62ab3bd2b30276a81",
+        "result": {
+          "status": "Completed · exit 0 · 0.32 s",
+          "stdout": "VERSION=1.13.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.13.4 without external network",
+      "status": "passed",
+      "durationMs": 961,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.13.4",
+          "application": null,
+          "version": "1.13.4",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "22.3.4.26",
+          "directory": "runtimes/1.13.4-627d2fbc7d4695fd/",
+          "status": "built",
+          "manifestSha256": "627d2fbc7d4695fd171f92d14754dc458c4924f12e8d4c886bb2754038773dbf"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "627d2fbc7d4695fd171f92d14754dc458c4924f12e8d4c886bb2754038773dbf",
+        "result": {
+          "status": "Completed · exit 0 · 0.32 s",
+          "stdout": "VERSION=1.13.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.14.0 without external network",
+      "status": "passed",
+      "durationMs": 943,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.14.0",
+          "application": null,
+          "version": "1.14.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "24.3.4.17",
+          "directory": "runtimes/1.14.0-46579ee7fa16ebb4/",
+          "status": "built",
+          "manifestSha256": "46579ee7fa16ebb4d9d15d346b7d13d08422de56fe914874a6976751dbd537cd"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "46579ee7fa16ebb4d9d15d346b7d13d08422de56fe914874a6976751dbd537cd",
+        "result": {
+          "status": "Completed · exit 0 · 0.31 s",
+          "stdout": "VERSION=1.14.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.14.5 without external network",
+      "status": "passed",
+      "durationMs": 952,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.14.5",
+          "application": null,
+          "version": "1.14.5",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "24.3.4.17",
+          "directory": "runtimes/1.14.5-1e1808aaffa49496/",
+          "status": "built",
+          "manifestSha256": "1e1808aaffa4949630d1d5bf90d26d8c029645eb99492d777031f0fb7581ecd7"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "1e1808aaffa4949630d1d5bf90d26d8c029645eb99492d777031f0fb7581ecd7",
+        "result": {
+          "status": "Completed · exit 0 · 0.34 s",
+          "stdout": "VERSION=1.14.5\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.15.0 without external network",
+      "status": "passed",
+      "durationMs": 959,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.15.0",
+          "application": null,
+          "version": "1.15.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "24.3.4.17",
+          "directory": "runtimes/1.15.0-43c39ac5641cf4fe/",
+          "status": "built",
+          "manifestSha256": "43c39ac5641cf4fef46a0893e36896a9a99cb4be972d34867748823332994993"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "43c39ac5641cf4fef46a0893e36896a9a99cb4be972d34867748823332994993",
+        "result": {
+          "status": "Completed · exit 0 · 0.36 s",
+          "stdout": "VERSION=1.15.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.15.8 without external network",
+      "status": "passed",
+      "durationMs": 942,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.15.8",
+          "application": null,
+          "version": "1.15.8",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "24.3.4.17",
+          "directory": "runtimes/1.15.8-a7e811becbc765a0/",
+          "status": "built",
+          "manifestSha256": "a7e811becbc765a01870bdc96b209b01e2f3ecc4ba114ca10ac31bb57953e611"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "a7e811becbc765a01870bdc96b209b01e2f3ecc4ba114ca10ac31bb57953e611",
+        "result": {
+          "status": "Completed · exit 0 · 0.33 s",
+          "stdout": "VERSION=1.15.8\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.16.0 without external network",
+      "status": "passed",
+      "durationMs": 932,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.16.0",
+          "application": null,
+          "version": "1.16.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "24.3.4.17",
+          "directory": "runtimes/1.16.0-b5d50f313f14ed7c/",
+          "status": "built",
+          "manifestSha256": "b5d50f313f14ed7cded2c8ed0f954ca8958008a4d2d660d453bd7450986dec52"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "b5d50f313f14ed7cded2c8ed0f954ca8958008a4d2d660d453bd7450986dec52",
+        "result": {
+          "status": "Completed · exit 0 · 0.30 s",
+          "stdout": "VERSION=1.16.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.16.3 without external network",
+      "status": "passed",
+      "durationMs": 941,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.16.3",
+          "application": null,
+          "version": "1.16.3",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "24.3.4.17",
+          "directory": "runtimes/1.16.3-491be10c3cee29c7/",
+          "status": "built",
+          "manifestSha256": "491be10c3cee29c7c3fbb5716360049e12a3ee7251014e33cb483e399dee24d3"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "491be10c3cee29c7c3fbb5716360049e12a3ee7251014e33cb483e399dee24d3",
+        "result": {
+          "status": "Completed · exit 0 · 0.30 s",
+          "stdout": "VERSION=1.16.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.17.0 without external network",
+      "status": "passed",
+      "durationMs": 955,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.17.0",
+          "application": null,
+          "version": "1.17.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/1.17.0-4b1824dcf19fc93a/",
+          "status": "built",
+          "manifestSha256": "4b1824dcf19fc93a6de312516b32616a595ed7423eeb61680f48989f6f25b2d2"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "4b1824dcf19fc93a6de312516b32616a595ed7423eeb61680f48989f6f25b2d2",
+        "result": {
+          "status": "Completed · exit 0 · 0.30 s",
+          "stdout": "VERSION=1.17.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.17.3 without external network",
+      "status": "passed",
+      "durationMs": 953,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.17.3",
+          "application": null,
+          "version": "1.17.3",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/1.17.3-25d8df1971131590/",
+          "status": "built",
+          "manifestSha256": "25d8df1971131590144b456f8b3bbdb27f21e0e7f663edf7dab9de5e125abf42"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "25d8df1971131590144b456f8b3bbdb27f21e0e7f663edf7dab9de5e125abf42",
+        "result": {
+          "status": "Completed · exit 0 · 0.32 s",
+          "stdout": "VERSION=1.17.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.20.0 without external network",
+      "status": "passed",
+      "durationMs": 991,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.20.0",
+          "application": null,
+          "version": "1.20.0",
+          "otp": "29.0.6",
+          "profile": "core",
+          "compilerOtp": "29.0.6",
+          "directory": "runtimes/1.20.0-cfb77a431575b7fe/",
+          "status": "built",
+          "manifestSha256": "cfb77a431575b7fe5c1da2a615c4ca5abf95ec3f7d6de461430b566750722507"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "cfb77a431575b7fe5c1da2a615c4ca5abf95ec3f7d6de461430b566750722507",
+        "result": {
+          "status": "Completed · exit 0 · 0.39 s",
+          "stdout": "VERSION=1.20.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.18.0 without external network",
+      "status": "passed",
+      "durationMs": 966,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.18.0",
+          "application": null,
+          "version": "1.18.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/1.18.0-71b0e438a65b4c0d/",
+          "status": "built",
+          "manifestSha256": "71b0e438a65b4c0d9744116908858d4ecbfb4994d337c221e7144d0942eeb447"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "71b0e438a65b4c0d9744116908858d4ecbfb4994d337c221e7144d0942eeb447",
+        "result": {
+          "status": "Completed · exit 0 · 0.31 s",
+          "stdout": "VERSION=1.18.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.18.5 without external network",
+      "status": "passed",
+      "durationMs": 941,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.18.5",
+          "application": null,
+          "version": "1.18.5",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/1.18.5-87248974d58a4b86/",
+          "status": "built",
+          "manifestSha256": "87248974d58a4b8642b877a409ffe70f705f2a41b929e3b6219af2193a3a2e95"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "87248974d58a4b8642b877a409ffe70f705f2a41b929e3b6219af2193a3a2e95",
+        "result": {
+          "status": "Completed · exit 0 · 0.34 s",
+          "stdout": "VERSION=1.18.5\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.19.0 without external network",
+      "status": "passed",
+      "durationMs": 957,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.19.0",
+          "application": null,
+          "version": "1.19.0",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/1.19.0-806810826643a735/",
+          "status": "built",
+          "manifestSha256": "806810826643a7357572739df93bbf2180f8a3df55d6729a6ffea90d167bbf63"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "806810826643a7357572739df93bbf2180f8a3df55d6729a6ffea90d167bbf63",
+        "result": {
+          "status": "Completed · exit 0 · 0.31 s",
+          "stdout": "VERSION=1.19.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute 1.19.6 without external network",
+      "status": "passed",
+      "durationMs": 944,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "1.19.6",
+          "application": null,
+          "version": "1.19.6",
+          "otp": "29.0.6",
+          "profile": "historical-retarget",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/1.19.6-c913dd3ed77aa722/",
+          "status": "built",
+          "manifestSha256": "c913dd3ed77aa722e3e4416e37c531eb6150109020bd02acdfdb03abfa45fdd4"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "c913dd3ed77aa722e3e4416e37c531eb6150109020bd02acdfdb03abfa45fdd4",
+        "result": {
+          "status": "Completed · exit 0 · 0.32 s",
+          "stdout": "VERSION=1.19.6\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute popcorn-1.20.4 without external network",
+      "status": "passed",
+      "durationMs": 1060,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "popcorn-1.20.4",
+          "backend": "popcorn",
+          "application": null,
+          "version": "1.20.4",
+          "otp": "29.0.6",
+          "runtimeVersion": "29.0.6",
+          "framework": {
+            "name": "Popcorn",
+            "version": "0.4.0-next.0"
+          },
+          "eval": true,
+          "programSource": null,
+          "profile": "popcorn-genserver",
+          "compilerOtp": "29.0.6",
+          "directory": "runtimes/popcorn-1.20.4-7d334a3c8cd3a4b2/",
+          "status": "built",
+          "manifestSha256": "7d334a3c8cd3a4b23e34816d421c6fc2ec31f39f6c5f9797a278f0641f7b451c"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "7d334a3c8cd3a4b23e34816d421c6fc2ec31f39f6c5f9797a278f0641f7b451c",
+        "result": {
+          "status": "Completed · exit 0 · 0.44 s",
+          "stdout": "VERSION=1.20.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\nBRIDGE=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute atomvm-1.17.3 without external network",
+      "status": "passed",
+      "durationMs": 232,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "atomvm-1.17.3",
+          "backend": "atomvm",
+          "application": null,
+          "version": "1.17.3",
+          "otp": null,
+          "runtimeVersion": "0.6.6",
+          "framework": null,
+          "eval": false,
+          "programSource": "source.exs",
+          "profile": "precompiled",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/atomvm-1.17.3-7a1d527497e7746e/",
+          "status": "built",
+          "manifestSha256": "7a1d527497e7746ebbf55189ecc671191282272d8be52d2499eae95a88dd02e0"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "7a1d527497e7746ebbf55189ecc671191282272d8be52d2499eae95a88dd02e0",
+        "result": {
+          "status": "Completed · exit 0 · 0.07 s",
+          "stdout": "COMPILER=1.17.3\nHello from stock AtomVM\n{squares,[1,4,9]}\nMESSAGE=42\nReturn value: ok\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute atomvm-1.17.0 without external network",
+      "status": "passed",
+      "durationMs": 223,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "atomvm-1.17.0",
+          "backend": "atomvm",
+          "application": null,
+          "version": "1.17.0",
+          "otp": null,
+          "runtimeVersion": "0.6.6",
+          "framework": null,
+          "eval": false,
+          "programSource": "source.exs",
+          "profile": "precompiled",
+          "compilerOtp": "26.2.5.13",
+          "directory": "runtimes/atomvm-1.17.0-84a7031e6bdf118e/",
+          "status": "built",
+          "manifestSha256": "84a7031e6bdf118e93299cc7c4bbbc4ff81205573c97c3b1680ab5a198363698"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "84a7031e6bdf118e93299cc7c4bbbc4ff81205573c97c3b1680ab5a198363698",
+        "result": {
+          "status": "Completed · exit 0 · 0.07 s",
+          "stdout": "COMPILER=1.17.0\nHello from stock AtomVM\n{squares,[1,4,9]}\nMESSAGE=42\nReturn value: ok\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "execute popcorn-1.20.0 without external network",
+      "status": "passed",
+      "durationMs": 1036,
+      "errors": [],
+      "evidence": {
+        "runtime": {
+          "id": "popcorn-1.20.0",
+          "backend": "popcorn",
+          "application": null,
+          "version": "1.20.0",
+          "otp": "29.0.6",
+          "runtimeVersion": "29.0.6",
+          "framework": {
+            "name": "Popcorn",
+            "version": "0.4.0-next.0"
+          },
+          "eval": true,
+          "programSource": null,
+          "profile": "popcorn-genserver",
+          "compilerOtp": "29.0.6",
+          "directory": "runtimes/popcorn-1.20.0-50694c6b37d062e9/",
+          "status": "built",
+          "manifestSha256": "50694c6b37d062e9cbb60d7d684892e48e1cd69504e131acfccc6ae7b9e57871"
+        },
+        "browser": "151.0.7922.34",
+        "manifestSha256": "50694c6b37d062e9cbb60d7d684892e48e1cd69504e131acfccc6ae7b9e57871",
+        "result": {
+          "status": "Completed · exit 0 · 0.44 s",
+          "stdout": "VERSION=1.20.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\nBRIDGE=42\n\n=> 42\n",
+          "stderr": ""
+        },
+        "externalRequests": []
+      },
+      "project": null
+    },
+    {
+      "name": "direct: fresh state, error recovery, stop and target boundaries",
+      "status": "passed",
+      "durationMs": 3378,
+      "errors": [],
+      "evidence": null,
+      "project": null
+    },
+    {
+      "name": "popcorn: fresh state, error recovery, stop and target boundaries",
+      "status": "passed",
+      "durationMs": 4994,
+      "errors": [],
+      "evidence": null,
+      "project": null
+    }
+  ]
+}

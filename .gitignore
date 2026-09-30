@@ -1,0 +1,10 @@
+/web/runtimes/
+/web/runtimes.local.json
+/node_modules/
+/test-results/
+/dist/
+__pycache__/
+.DS_Store
+/docs/
+
+/web/docs/

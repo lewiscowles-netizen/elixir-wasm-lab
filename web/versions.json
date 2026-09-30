@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-09-29",
+  "policy": "first and latest stable patch of every released minor, starting at 1.0; prereleases and moving latest tags excluded",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "series": "1.0",
+      "position": "first",
+      "file": "elixir-1.0.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.0.0",
+      "sha256": "527774b05bcaacb0347299b42035b606107e88665fcdd415b0b62704ad7928b2"
+    },
+    {
+      "version": "1.0.5",
+      "series": "1.0",
+      "position": "latest",
+      "file": "elixir-1.0.5.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.0.5",
+      "sha256": "5ce5c226b3d11d751b41ad79b915b86f13f8a1b89ef3e733321d3f46ff4d81b8"
+    },
+    {
+      "version": "1.1.0",
+      "series": "1.1",
+      "position": "first",
+      "file": "elixir-1.1.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.1.0",
+      "sha256": "6be4f083df230f901975df3a3bb32d3bd1e70a4d0a072aabc5972113b37ebb3b"
+    },
+    {
+      "version": "1.1.1",
+      "series": "1.1",
+      "position": "latest",
+      "file": "elixir-1.1.1.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.1.1",
+      "sha256": "3b7d6e4fdbcc82d19fa76f4e384f8a87535abcd00ef04528dc6b6706f32a106a"
+    },
+    {
+      "version": "1.2.0",
+      "series": "1.2",
+      "position": "first",
+      "file": "elixir-1.2.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.2.0",
+      "sha256": "9f68ee5213b883c91f2f521df1f773ceec5913dbf075f7781b57ac97543e7268"
+    },
+    {
+      "version": "1.2.6",
+      "series": "1.2",
+      "position": "latest",
+      "file": "elixir-1.2.6.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.2.6",
+      "sha256": "2fd4ed9d7d8b4bd9f151cdaf6b39726d64d7cf756186a5c9454867514e5b0916"
+    },
+    {
+      "version": "1.3.0",
+      "series": "1.3",
+      "position": "first",
+      "file": "elixir-1.3.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.3.0",
+      "sha256": "66cb8448dd60397cad11ba554c2613f732192c9026468cff55e8347a5ae4004a"
+    },
+    {
+      "version": "1.3.4",
+      "series": "1.3",
+      "position": "latest",
+      "file": "elixir-1.3.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.3.4",
+      "sha256": "f5ee5353d8dbe610b1dfd276d22f2038d57d9a7d3cea69dac10da2b098bd2033"
+    },
+    {
+      "version": "1.4.0",
+      "series": "1.4",
+      "position": "first",
+      "file": "elixir-1.4.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.4.0",
+      "sha256": "34a6747b5db75c35e542805b75a08bc1b2b0a53b5180f33de6af0bdff870e6b3"
+    },
+    {
+      "version": "1.4.5",
+      "series": "1.4",
+      "position": "latest",
+      "file": "elixir-1.4.5.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.4.5",
+      "sha256": "bef1a0ea7a36539eed4b104ec26a82e46940959345ed66509ec6cc3d987bada0"
+    },
+    {
+      "version": "1.5.0",
+      "series": "1.5",
+      "position": "first",
+      "file": "elixir-1.5.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.5.0",
+      "sha256": "0857550097d0bf078a218f7663372f5c9a899847d73399f05ca9fa9087edf462"
+    },
+    {
+      "version": "1.5.3",
+      "series": "1.5",
+      "position": "latest",
+      "file": "elixir-1.5.3.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.5.3",
+      "sha256": "0fc6024b6027d87af9609b416448fd65d8927e0d05fc02410b35f4b9b9eb9629"
+    },
+    {
+      "version": "1.6.0",
+      "series": "1.6",
+      "position": "first",
+      "file": "elixir-1.6.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.6.0",
+      "sha256": "28d93afac480a279b75c3e57ce53fb4c027217c8db55a19d364efe8ceccd1b40"
+    },
+    {
+      "version": "1.6.6",
+      "series": "1.6",
+      "position": "latest",
+      "file": "elixir-1.6.6.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.6.6",
+      "sha256": "74507b0646bf485ee3af0e7727e3fdab7123f1c5ecf2187a52a928ad60f93831"
+    },
+    {
+      "version": "1.7.0",
+      "series": "1.7",
+      "position": "first",
+      "file": "elixir-1.7.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.7.0",
+      "sha256": "791f726f7e3bb05a4620beb6191f2d758332ea7a169861b03580a16022c49a75"
+    },
+    {
+      "version": "1.7.4",
+      "series": "1.7",
+      "position": "latest",
+      "file": "elixir-1.7.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.7.4",
+      "sha256": "c7c87983e03a1dcf20078141a22355e88dadb26b53d3f3f98b9a9268687f9e20"
+    },
+    {
+      "version": "1.8.0",
+      "series": "1.8",
+      "position": "first",
+      "file": "elixir-1.8.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.8.0",
+      "sha256": "fe896d8b2914f982d2e6fceeb585f59a8f92ad872653fc46c13df9ff86d69234"
+    },
+    {
+      "version": "1.8.2",
+      "series": "1.8",
+      "position": "latest",
+      "file": "elixir-1.8.2.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.8.2",
+      "sha256": "cf9bf0b2d92bc4671431e3fe1d1b0a0e5125f1a942cc4fdf7914b74f04efb835"
+    },
+    {
+      "version": "1.9.0",
+      "series": "1.9",
+      "position": "first",
+      "file": "elixir-1.9.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.9.0",
+      "sha256": "dbf4cb66634e22d60fe4aa162946c992257f700c7db123212e7e29d1c0b0c487"
+    },
+    {
+      "version": "1.9.4",
+      "series": "1.9",
+      "position": "latest",
+      "file": "elixir-1.9.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.9.4",
+      "sha256": "f3465d8a8e386f3e74831bf9594ee39e6dfde6aa430fe9260844cfe46aa10139"
+    },
+    {
+      "version": "1.10.0",
+      "series": "1.10",
+      "position": "first",
+      "file": "elixir-1.10.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.10.0",
+      "sha256": "6f0d35acfcbede5ef7dced3e37f016fd122c2779000ca9dcaf92975b220737b7"
+    },
+    {
+      "version": "1.10.4",
+      "series": "1.10",
+      "position": "latest",
+      "file": "elixir-1.10.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.10.4",
+      "sha256": "8518c78f43fe36315dbe0d623823c2c1b7a025c114f3f4adbb48e04ef63f1d9f"
+    },
+    {
+      "version": "1.11.0",
+      "series": "1.11",
+      "position": "first",
+      "file": "elixir-1.11.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.11.0",
+      "sha256": "80b02a8973d2a0becacf577f15b202273002ad9c4d9ef55d8910c8d433c99a59"
+    },
+    {
+      "version": "1.11.4",
+      "series": "1.11",
+      "position": "latest",
+      "file": "elixir-1.11.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.11.4",
+      "sha256": "85c7118a0db6007507313db5bddf370216d9394ed7911fe80f21e2fbf7f54d29"
+    },
+    {
+      "version": "1.12.0",
+      "series": "1.12",
+      "position": "first",
+      "file": "elixir-1.12.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.12.0",
+      "sha256": "2fc896b5f7174708b9a643f1ff3d1718dcc5d2ee31f01b455c0570e8424a3c9a"
+    },
+    {
+      "version": "1.12.3",
+      "series": "1.12",
+      "position": "latest",
+      "file": "elixir-1.12.3.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.12.3",
+      "sha256": "c5affa97defafa1fd89c81656464d61da8f76ccfec2ea80c8a528decd5cb04ad"
+    },
+    {
+      "version": "1.13.0",
+      "series": "1.13",
+      "position": "first",
+      "file": "elixir-1.13.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.13.0",
+      "sha256": "0ed0fb89a9b6428cd1537b7f9aab1d6ea64e0c5972589eeb46dff6f0324468ae"
+    },
+    {
+      "version": "1.13.4",
+      "series": "1.13",
+      "position": "latest",
+      "file": "elixir-1.13.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.13.4",
+      "sha256": "95daf2dd3052e6ca7d4d849457eaaba09de52d65ca38d6933c65bc1cdf6b8579"
+    },
+    {
+      "version": "1.14.0",
+      "series": "1.14",
+      "position": "first",
+      "file": "elixir-1.14.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.14.0",
+      "sha256": "ac129e266a1e04cdc389551843ec3dbdf36086bb2174d3d7e7936e820735003b"
+    },
+    {
+      "version": "1.14.5",
+      "series": "1.14",
+      "position": "latest",
+      "file": "elixir-1.14.5.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.14.5",
+      "sha256": "2ea249566c67e57f8365ecdcd0efd9b6c375f57609b3ac2de326488ac37c8ebd"
+    },
+    {
+      "version": "1.15.0",
+      "series": "1.15",
+      "position": "first",
+      "file": "elixir-1.15.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.15.0",
+      "sha256": "0f4df7574a5f300b5c66f54906222cd46dac0df7233ded165bc8e80fd9ffeb7a"
+    },
+    {
+      "version": "1.15.8",
+      "series": "1.15",
+      "position": "latest",
+      "file": "elixir-1.15.8.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.15.8",
+      "sha256": "09e697ab13fc60f27adaba9b71f8793105acd4320a89b16be0ceb4a13426d779"
+    },
+    {
+      "version": "1.16.0",
+      "series": "1.16",
+      "position": "first",
+      "file": "elixir-1.16.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.16.0",
+      "sha256": "d7fe641e3c85c9774232618d22c880c86c2f31e3508c344ce75d134cd40aea18"
+    },
+    {
+      "version": "1.16.3",
+      "series": "1.16",
+      "position": "latest",
+      "file": "elixir-1.16.3.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.16.3",
+      "sha256": "a163128e618e5205ea749f8effafa5b540008fd0bed863e75e2e09663a00ec45"
+    },
+    {
+      "version": "1.17.0",
+      "series": "1.17",
+      "position": "first",
+      "file": "elixir-1.17.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.17.0",
+      "sha256": "558f89cd39458bed1f945d87ad320e5d8f337fa9e627a8479aaefa0494a06ea7"
+    },
+    {
+      "version": "1.17.3",
+      "series": "1.17",
+      "position": "latest",
+      "file": "elixir-1.17.3.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.17.3",
+      "sha256": "6116c14d5e61ec301240cebeacbf9e97125a4d45cd9071e65e0b958d5ebf3890"
+    },
+    {
+      "version": "1.18.0",
+      "series": "1.18",
+      "position": "first",
+      "file": "elixir-1.18.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.18.0",
+      "sha256": "f29104ae5a0ea78786b5fb96dce0c569db91df5bd1d3472b365dc2ea14ea784f"
+    },
+    {
+      "version": "1.18.5",
+      "series": "1.18",
+      "position": "latest",
+      "file": "elixir-1.18.5.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.18.5",
+      "sha256": "8996eb81697ed84dde41e8ad8f0a52680de52cef35323ca6c9523f668351d873"
+    },
+    {
+      "version": "1.19.0",
+      "series": "1.19",
+      "position": "first",
+      "file": "elixir-1.19.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.19.0",
+      "sha256": "99a684045b49f9c5005a1aa8278e1bac8c3769e0a5a13c05ef80b69113029234"
+    },
+    {
+      "version": "1.19.6",
+      "series": "1.19",
+      "position": "latest",
+      "file": "elixir-1.19.6.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.19.6",
+      "sha256": "9c27c00eb9e88666ce7a3c576c1b2160875a56db10e80a49a24a8568c864d071"
+    },
+    {
+      "version": "1.20.0",
+      "series": "1.20",
+      "position": "first",
+      "file": "elixir-1.20.0.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.20.0",
+      "sha256": "70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c"
+    },
+    {
+      "version": "1.20.4",
+      "series": "1.20",
+      "position": "latest",
+      "file": "elixir-1.20.4.tar.gz",
+      "url": "https://codeload.github.com/elixir-lang/elixir/tar.gz/refs/tags/v1.20.4",
+      "sha256": "2f87be1702583ecbeee82c0ad4d6353de96463cfa0fa6e7557e05f68d90da869"
+    }
+  ]
+}
