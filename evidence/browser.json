@@ -1,24 +1,33 @@
 {
   "schemaVersion": 1,
-  "time": "2026-09-29T17:59:50.317Z",
+  "time": "2026-09-30T06:52:05.497Z",
   "status": "passed",
   "scope": "Chromium browser execution with external HTTP requests blocked",
   "labSourceHashes": {
     "web/worker.mjs": "7bb832779bcc25f2b5a35bddf38569b4237870f6d1fa844f0908afda89a4c0ff",
     "web/atomvm-worker.mjs": "f2203016bc8ff479c505fa77f37c438feec988695c4e28ad50542062d02d619c",
     "web/popcorn-adapter.mjs": "27dcd82c44ceebdae4eb32cea731d40f926a9fc027b2b9bc3902be0e0db4e1c5",
-    "web/app.mjs": "56e48ee5db874bb774c13ec8b3895cb551db8d0432decb91177019f35fc0335a",
-    "web/index.html": "5199ccb4f95c6b429a127c166b144e17121243bbdda82cf039278736712244ed",
-    "tests/browser.spec.cjs": "4fbfbdc44290055d1cd5114052f8400682632f2a9c4d54ea3a78d7c5b2115fa3",
-    "tests/evidence-reporter.cjs": "cb5e8445b31c0491a76a3f0e30f20c21fd37d01f6cfeb887d62cbd85ecc76d61",
+    "web/app.mjs": "fec019f9a7403c096d7c9752fd18d77b1f9cd9cc64abd261ca1fa37e2236705e",
+    "web/index.html": "053aaed584477eb00835d42fb1537a5fbc7435b49201bca51856b367936c19cc",
+    "web/style.css": "03d43c7b41fa65ad518ae319d64652f2b0c5591dd2e96c5bfe4620f4c955ed18",
+    "tests/browser.spec.cjs": "0a3fb6cd8e944a6c3af9319856ee2d95df14183663a95b09b252cb33b54f6537",
+    "tests/evidence-reporter.cjs": "428240df650d3e811aca32a5eedcf5b695fdbdf0ced72038adac3924583e9f6c",
     "playwright.config.cjs": "bb0ffb40ce92e475e3d0384f157bc6e6197cb901d7ea56c7049293baa5962ebd",
     "serve.py": "4ea24a4db629371b08c8e9bd2cdc8c496d29c55dc13e846a30d5f2f7e2a56f6b"
   },
   "results": [
     {
+      "name": "selection waits for delayed evidence without resetting a chosen release",
+      "status": "passed",
+      "durationMs": 1462,
+      "errors": [],
+      "evidence": null,
+      "project": null
+    },
+    {
       "name": "execute 1.20.4 without external network",
       "status": "passed",
-      "durationMs": 1313,
+      "durationMs": 1081,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -35,7 +44,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "ddf91375eebdabfd676fa63ccfcdf5dd2cc584630d839026906a90398528ae4c",
         "result": {
-          "status": "Completed · exit 0 · 0.43 s",
+          "status": "Completed · exit 0 · 0.52 s",
           "stdout": "VERSION=1.20.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
           "stderr": ""
         },
@@ -46,7 +55,7 @@
     {
       "name": "execute 1.20.4-receipts without external network",
       "status": "passed",
-      "durationMs": 1300,
+      "durationMs": 1876,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -63,14 +72,14 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "2cd2a95155e48fbc8a2df09af8a46fe29e844991dcd7cdb3540be73cf750a184",
         "result": {
-          "status": "Completed · exit 0 · 0.40 s",
+          "status": "Completed · exit 0 · 0.39 s",
           "stdout": "VERSION=1.20.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
           "stderr": ""
         },
         "externalRequests": []
       },
       "project": {
-        "status": "Completed · exit 0 · 0.22 s",
+        "status": "Completed · exit 0 · 0.32 s",
         "stdout": "2000\n300\n[2000, 300]\nA receipt from your browser\n\n\n=> :ok\n",
         "stderr": ""
       }
@@ -78,7 +87,7 @@
     {
       "name": "execute 1.2.0 without external network",
       "status": "passed",
-      "durationMs": 978,
+      "durationMs": 1027,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -95,7 +104,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "807894486b842fd0e87b62c0c35671b9681ba077b7345a5c68a173002b83d11f",
         "result": {
-          "status": "Completed · exit 0 · 0.45 s",
+          "status": "Completed · exit 0 · 0.43 s",
           "stdout": "VERSION=1.2.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -106,7 +115,7 @@
     {
       "name": "execute 1.2.6 without external network",
       "status": "passed",
-      "durationMs": 1006,
+      "durationMs": 992,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -123,7 +132,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "44556dd409dcc8e56738b9991b3da1f4b955c174f6e57ee5cce566677fd2e5ab",
         "result": {
-          "status": "Completed · exit 0 · 0.49 s",
+          "status": "Completed · exit 0 · 0.43 s",
           "stdout": "VERSION=1.2.6\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -134,7 +143,7 @@
     {
       "name": "execute 1.1.0 without external network",
       "status": "passed",
-      "durationMs": 998,
+      "durationMs": 996,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -151,7 +160,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "c6c1e04246b45a34c03860e6b359d30f05ba0eddbdde2a15898ad2fe74236037",
         "result": {
-          "status": "Completed · exit 0 · 0.42 s",
+          "status": "Completed · exit 0 · 0.41 s",
           "stdout": "VERSION=1.1.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -162,7 +171,7 @@
     {
       "name": "execute 1.1.1 without external network",
       "status": "passed",
-      "durationMs": 981,
+      "durationMs": 992,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -179,7 +188,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "fd22e3bcd309a6de209f03782865ab6c64228b9eb824c08c4b8129939e812a7b",
         "result": {
-          "status": "Completed · exit 0 · 0.40 s",
+          "status": "Completed · exit 0 · 0.49 s",
           "stdout": "VERSION=1.1.1\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -190,7 +199,7 @@
     {
       "name": "execute 1.3.0 without external network",
       "status": "passed",
-      "durationMs": 1004,
+      "durationMs": 1015,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -218,7 +227,7 @@
     {
       "name": "execute 1.3.4 without external network",
       "status": "passed",
-      "durationMs": 1063,
+      "durationMs": 1398,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -235,7 +244,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "88b1e9b2863c078c72bed0ac6520909dfeb947462e6787eaf6dbbaa4463dc300",
         "result": {
-          "status": "Completed · exit 0 · 0.49 s",
+          "status": "Completed · exit 0 · 0.65 s",
           "stdout": "VERSION=1.3.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -246,7 +255,7 @@
     {
       "name": "execute 1.4.0 without external network",
       "status": "passed",
-      "durationMs": 969,
+      "durationMs": 1160,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -263,7 +272,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "e0469c4f8a6874dff8179f5c70c75f04f62c55dc472468ccfca8c90701f86bdd",
         "result": {
-          "status": "Completed · exit 0 · 0.41 s",
+          "status": "Completed · exit 0 · 0.64 s",
           "stdout": "VERSION=1.4.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -274,7 +283,7 @@
     {
       "name": "execute 1.4.5 without external network",
       "status": "passed",
-      "durationMs": 1106,
+      "durationMs": 1074,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -291,7 +300,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "b9e00109407427b6fc34d680e31b60067a1d1565744682c962903a8332efb652",
         "result": {
-          "status": "Completed · exit 0 · 0.54 s",
+          "status": "Completed · exit 0 · 0.61 s",
           "stdout": "VERSION=1.4.5\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -302,7 +311,7 @@
     {
       "name": "execute 1.5.0 without external network",
       "status": "passed",
-      "durationMs": 997,
+      "durationMs": 1601,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -319,7 +328,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "2e4b1ef3c60386130efeb3a93f2d473b44fa5983503a12bf16048339f0a2e856",
         "result": {
-          "status": "Completed · exit 0 · 0.43 s",
+          "status": "Completed · exit 0 · 0.52 s",
           "stdout": "VERSION=1.5.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -330,7 +339,7 @@
     {
       "name": "execute 1.5.3 without external network",
       "status": "passed",
-      "durationMs": 988,
+      "durationMs": 1059,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -347,7 +356,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "e8766b6272588186a70c214237d472b3f9e8152d47bd22cce9365be5a281357f",
         "result": {
-          "status": "Completed · exit 0 · 0.45 s",
+          "status": "Completed · exit 0 · 0.54 s",
           "stdout": "VERSION=1.5.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -358,7 +367,7 @@
     {
       "name": "execute 1.0.0 without external network",
       "status": "passed",
-      "durationMs": 963,
+      "durationMs": 986,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -375,7 +384,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "dc295413fd0b68cd425b7b6ae42a57887d12138cbc51d7396b572c5f09c104b2",
         "result": {
-          "status": "Completed · exit 0 · 0.40 s",
+          "status": "Completed · exit 0 · 0.41 s",
           "stdout": "VERSION=1.0.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -386,7 +395,7 @@
     {
       "name": "execute 1.0.5 without external network",
       "status": "passed",
-      "durationMs": 955,
+      "durationMs": 1025,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -414,7 +423,7 @@
     {
       "name": "execute 1.6.0 without external network",
       "status": "passed",
-      "durationMs": 995,
+      "durationMs": 1111,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -431,7 +440,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "72f9bd62e2e6b92d76d89c6d3f45324aae558fddef1564d7a3ad4a51a50e41aa",
         "result": {
-          "status": "Completed · exit 0 · 0.44 s",
+          "status": "Completed · exit 0 · 0.51 s",
           "stdout": "VERSION=1.6.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -442,7 +451,7 @@
     {
       "name": "execute 1.6.6 without external network",
       "status": "passed",
-      "durationMs": 983,
+      "durationMs": 998,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -470,7 +479,7 @@
     {
       "name": "execute 1.7.0 without external network",
       "status": "passed",
-      "durationMs": 1009,
+      "durationMs": 1000,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -487,7 +496,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "672214b7e576ded94d4ffdc625863813e34a70d02ec97fc1348a39bc5731c20d",
         "result": {
-          "status": "Completed · exit 0 · 0.47 s",
+          "status": "Completed · exit 0 · 0.45 s",
           "stdout": "VERSION=1.7.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -498,7 +507,7 @@
     {
       "name": "execute 1.7.4 without external network",
       "status": "passed",
-      "durationMs": 963,
+      "durationMs": 1027,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -515,7 +524,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "d665639148c2a937ee56bda8ae5e3fbc30692291246b3cfe4db93a06ffd9a85e",
         "result": {
-          "status": "Completed · exit 0 · 0.45 s",
+          "status": "Completed · exit 0 · 0.49 s",
           "stdout": "VERSION=1.7.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -526,7 +535,7 @@
     {
       "name": "execute 1.8.0 without external network",
       "status": "passed",
-      "durationMs": 987,
+      "durationMs": 993,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -543,7 +552,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "233546f83aed9f0358bd8b5340d43308ae58f725a72e4e46decbbf917e7c62e4",
         "result": {
-          "status": "Completed · exit 0 · 0.43 s",
+          "status": "Completed · exit 0 · 0.41 s",
           "stdout": "VERSION=1.8.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -554,7 +563,7 @@
     {
       "name": "execute 1.8.2 without external network",
       "status": "passed",
-      "durationMs": 1019,
+      "durationMs": 1036,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -571,7 +580,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "f5c6e99ceebf981e2f5a6072cba02bdc9bb17fee30787c65193f5838bd191f4d",
         "result": {
-          "status": "Completed · exit 0 · 0.46 s",
+          "status": "Completed · exit 0 · 0.42 s",
           "stdout": "VERSION=1.8.2\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -582,7 +591,7 @@
     {
       "name": "execute 1.9.0 without external network",
       "status": "passed",
-      "durationMs": 1023,
+      "durationMs": 1001,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -599,7 +608,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "c088f822d07bf0a774ccfccfffbdd9f347ce4e27d4d3870a26989eaee814d32e",
         "result": {
-          "status": "Completed · exit 0 · 0.46 s",
+          "status": "Completed · exit 0 · 0.44 s",
           "stdout": "VERSION=1.9.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -610,7 +619,7 @@
     {
       "name": "execute 1.9.4 without external network",
       "status": "passed",
-      "durationMs": 1035,
+      "durationMs": 995,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -627,7 +636,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "944173518a838f2805c9c6678f33b7136da2630641fb7f55bf110a29a976dbec",
         "result": {
-          "status": "Completed · exit 0 · 0.51 s",
+          "status": "Completed · exit 0 · 0.50 s",
           "stdout": "VERSION=1.9.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -638,7 +647,7 @@
     {
       "name": "execute 1.10.0 without external network",
       "status": "passed",
-      "durationMs": 1009,
+      "durationMs": 998,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -666,7 +675,7 @@
     {
       "name": "execute 1.10.4 without external network",
       "status": "passed",
-      "durationMs": 973,
+      "durationMs": 1065,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -683,7 +692,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "b1a94ed59f76088724b12a2407c68cc1f030dc160567e2cb0c7b9b72ae125ffb",
         "result": {
-          "status": "Completed · exit 0 · 0.45 s",
+          "status": "Completed · exit 0 · 0.52 s",
           "stdout": "VERSION=1.10.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -694,7 +703,7 @@
     {
       "name": "execute 1.11.0 without external network",
       "status": "passed",
-      "durationMs": 939,
+      "durationMs": 948,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -711,7 +720,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "730a52b9651b1aa7ebc5f8c2888ef1d3b9977e48578682393deff2e660ee8ead",
         "result": {
-          "status": "Completed · exit 0 · 0.29 s",
+          "status": "Completed · exit 0 · 0.38 s",
           "stdout": "VERSION=1.11.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -722,7 +731,7 @@
     {
       "name": "execute 1.11.4 without external network",
       "status": "passed",
-      "durationMs": 939,
+      "durationMs": 974,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -739,7 +748,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "3e7021edf5a058db8760ee7089ab38c6cbda504a984226ac66dbd041a1c773b9",
         "result": {
-          "status": "Completed · exit 0 · 0.35 s",
+          "status": "Completed · exit 0 · 0.41 s",
           "stdout": "VERSION=1.11.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -750,7 +759,7 @@
     {
       "name": "execute 1.12.0 without external network",
       "status": "passed",
-      "durationMs": 983,
+      "durationMs": 957,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -778,7 +787,7 @@
     {
       "name": "execute 1.12.3 without external network",
       "status": "passed",
-      "durationMs": 959,
+      "durationMs": 953,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -795,7 +804,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "7ae70d60cbe8ef4e066b387dfbd07a08e2f5843e85dfe9e38689afe4bea5f376",
         "result": {
-          "status": "Completed · exit 0 · 0.31 s",
+          "status": "Completed · exit 0 · 0.36 s",
           "stdout": "VERSION=1.12.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -806,7 +815,7 @@
     {
       "name": "execute 1.13.0 without external network",
       "status": "passed",
-      "durationMs": 944,
+      "durationMs": 953,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -834,7 +843,7 @@
     {
       "name": "execute 1.13.4 without external network",
       "status": "passed",
-      "durationMs": 961,
+      "durationMs": 932,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -851,7 +860,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "627d2fbc7d4695fd171f92d14754dc458c4924f12e8d4c886bb2754038773dbf",
         "result": {
-          "status": "Completed · exit 0 · 0.32 s",
+          "status": "Completed · exit 0 · 0.34 s",
           "stdout": "VERSION=1.13.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -862,7 +871,7 @@
     {
       "name": "execute 1.14.0 without external network",
       "status": "passed",
-      "durationMs": 943,
+      "durationMs": 965,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -879,7 +888,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "46579ee7fa16ebb4d9d15d346b7d13d08422de56fe914874a6976751dbd537cd",
         "result": {
-          "status": "Completed · exit 0 · 0.31 s",
+          "status": "Completed · exit 0 · 0.33 s",
           "stdout": "VERSION=1.14.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -890,7 +899,7 @@
     {
       "name": "execute 1.14.5 without external network",
       "status": "passed",
-      "durationMs": 952,
+      "durationMs": 963,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -918,7 +927,7 @@
     {
       "name": "execute 1.15.0 without external network",
       "status": "passed",
-      "durationMs": 959,
+      "durationMs": 927,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -935,7 +944,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "43c39ac5641cf4fef46a0893e36896a9a99cb4be972d34867748823332994993",
         "result": {
-          "status": "Completed · exit 0 · 0.36 s",
+          "status": "Completed · exit 0 · 0.32 s",
           "stdout": "VERSION=1.15.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -946,7 +955,7 @@
     {
       "name": "execute 1.15.8 without external network",
       "status": "passed",
-      "durationMs": 942,
+      "durationMs": 960,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -963,7 +972,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "a7e811becbc765a01870bdc96b209b01e2f3ecc4ba114ca10ac31bb57953e611",
         "result": {
-          "status": "Completed · exit 0 · 0.33 s",
+          "status": "Completed · exit 0 · 0.31 s",
           "stdout": "VERSION=1.15.8\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -974,7 +983,7 @@
     {
       "name": "execute 1.16.0 without external network",
       "status": "passed",
-      "durationMs": 932,
+      "durationMs": 954,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -991,7 +1000,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "b5d50f313f14ed7cded2c8ed0f954ca8958008a4d2d660d453bd7450986dec52",
         "result": {
-          "status": "Completed · exit 0 · 0.30 s",
+          "status": "Completed · exit 0 · 0.31 s",
           "stdout": "VERSION=1.16.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -1002,7 +1011,7 @@
     {
       "name": "execute 1.16.3 without external network",
       "status": "passed",
-      "durationMs": 941,
+      "durationMs": 961,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1019,7 +1028,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "491be10c3cee29c7c3fbb5716360049e12a3ee7251014e33cb483e399dee24d3",
         "result": {
-          "status": "Completed · exit 0 · 0.30 s",
+          "status": "Completed · exit 0 · 0.35 s",
           "stdout": "VERSION=1.16.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -1030,7 +1039,7 @@
     {
       "name": "execute 1.17.0 without external network",
       "status": "passed",
-      "durationMs": 955,
+      "durationMs": 963,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1047,7 +1056,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "4b1824dcf19fc93a6de312516b32616a595ed7423eeb61680f48989f6f25b2d2",
         "result": {
-          "status": "Completed · exit 0 · 0.30 s",
+          "status": "Completed · exit 0 · 0.32 s",
           "stdout": "VERSION=1.17.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -1058,7 +1067,7 @@
     {
       "name": "execute 1.17.3 without external network",
       "status": "passed",
-      "durationMs": 953,
+      "durationMs": 968,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1075,7 +1084,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "25d8df1971131590144b456f8b3bbdb27f21e0e7f663edf7dab9de5e125abf42",
         "result": {
-          "status": "Completed · exit 0 · 0.32 s",
+          "status": "Completed · exit 0 · 0.31 s",
           "stdout": "VERSION=1.17.3\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\n\n=> 42\n",
           "stderr": ""
         },
@@ -1086,7 +1095,7 @@
     {
       "name": "execute 1.20.0 without external network",
       "status": "passed",
-      "durationMs": 991,
+      "durationMs": 953,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1103,7 +1112,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "cfb77a431575b7fe5c1da2a615c4ca5abf95ec3f7d6de461430b566750722507",
         "result": {
-          "status": "Completed · exit 0 · 0.39 s",
+          "status": "Completed · exit 0 · 0.30 s",
           "stdout": "VERSION=1.20.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
           "stderr": ""
         },
@@ -1114,7 +1123,7 @@
     {
       "name": "execute 1.18.0 without external network",
       "status": "passed",
-      "durationMs": 966,
+      "durationMs": 930,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1142,7 +1151,7 @@
     {
       "name": "execute 1.18.5 without external network",
       "status": "passed",
-      "durationMs": 941,
+      "durationMs": 987,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1159,7 +1168,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "87248974d58a4b8642b877a409ffe70f705f2a41b929e3b6219af2193a3a2e95",
         "result": {
-          "status": "Completed · exit 0 · 0.34 s",
+          "status": "Completed · exit 0 · 0.36 s",
           "stdout": "VERSION=1.18.5\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
           "stderr": ""
         },
@@ -1170,7 +1179,7 @@
     {
       "name": "execute 1.19.0 without external network",
       "status": "passed",
-      "durationMs": 957,
+      "durationMs": 967,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1187,7 +1196,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "806810826643a7357572739df93bbf2180f8a3df55d6729a6ffea90d167bbf63",
         "result": {
-          "status": "Completed · exit 0 · 0.31 s",
+          "status": "Completed · exit 0 · 0.38 s",
           "stdout": "VERSION=1.19.0\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
           "stderr": ""
         },
@@ -1198,7 +1207,7 @@
     {
       "name": "execute 1.19.6 without external network",
       "status": "passed",
-      "durationMs": 944,
+      "durationMs": 940,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1215,7 +1224,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "c913dd3ed77aa722e3e4416e37c531eb6150109020bd02acdfdb03abfa45fdd4",
         "result": {
-          "status": "Completed · exit 0 · 0.32 s",
+          "status": "Completed · exit 0 · 0.33 s",
           "stdout": "VERSION=1.19.6\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\n\n=> 42\n",
           "stderr": ""
         },
@@ -1226,7 +1235,7 @@
     {
       "name": "execute popcorn-1.20.4 without external network",
       "status": "passed",
-      "durationMs": 1060,
+      "durationMs": 1168,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1251,7 +1260,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "7d334a3c8cd3a4b23e34816d421c6fc2ec31f39f6c5f9797a278f0641f7b451c",
         "result": {
-          "status": "Completed · exit 0 · 0.44 s",
+          "status": "Completed · exit 0 · 0.55 s",
           "stdout": "VERSION=1.20.4\nOTP=29\n[1, 4, 9]\nMESSAGE=42\nlocal file\nJSON=42\nBRIDGE=42\n\n=> 42\n",
           "stderr": ""
         },
@@ -1262,7 +1271,7 @@
     {
       "name": "execute atomvm-1.17.3 without external network",
       "status": "passed",
-      "durationMs": 232,
+      "durationMs": 366,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1284,7 +1293,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "7a1d527497e7746ebbf55189ecc671191282272d8be52d2499eae95a88dd02e0",
         "result": {
-          "status": "Completed · exit 0 · 0.07 s",
+          "status": "Completed · exit 0 · 0.08 s",
           "stdout": "COMPILER=1.17.3\nHello from stock AtomVM\n{squares,[1,4,9]}\nMESSAGE=42\nReturn value: ok\n",
           "stderr": ""
         },
@@ -1295,7 +1304,7 @@
     {
       "name": "execute atomvm-1.17.0 without external network",
       "status": "passed",
-      "durationMs": 223,
+      "durationMs": 258,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1317,7 +1326,7 @@
         "browser": "151.0.7922.34",
         "manifestSha256": "84a7031e6bdf118e93299cc7c4bbbc4ff81205573c97c3b1680ab5a198363698",
         "result": {
-          "status": "Completed · exit 0 · 0.07 s",
+          "status": "Completed · exit 0 · 0.08 s",
           "stdout": "COMPILER=1.17.0\nHello from stock AtomVM\n{squares,[1,4,9]}\nMESSAGE=42\nReturn value: ok\n",
           "stderr": ""
         },
@@ -1328,7 +1337,7 @@
     {
       "name": "execute popcorn-1.20.0 without external network",
       "status": "passed",
-      "durationMs": 1036,
+      "durationMs": 989,
       "errors": [],
       "evidence": {
         "runtime": {
@@ -1364,7 +1373,7 @@
     {
       "name": "direct: fresh state, error recovery, stop and target boundaries",
       "status": "passed",
-      "durationMs": 3378,
+      "durationMs": 3430,
       "errors": [],
       "evidence": null,
       "project": null
@@ -1372,7 +1381,23 @@
     {
       "name": "popcorn: fresh state, error recovery, stop and target boundaries",
       "status": "passed",
-      "durationMs": 4994,
+      "durationMs": 5249,
+      "errors": [],
+      "evidence": null,
+      "project": null
+    },
+    {
+      "name": "WASI selection and download wasi-atomvm-1.17.0",
+      "status": "passed",
+      "durationMs": 213,
+      "errors": [],
+      "evidence": null,
+      "project": null
+    },
+    {
+      "name": "WASI selection and download wasi-atomvm-1.17.3",
+      "status": "passed",
+      "durationMs": 156,
       "errors": [],
       "evidence": null,
       "project": null

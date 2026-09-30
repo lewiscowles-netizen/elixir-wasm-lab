@@ -4,6 +4,25 @@ const crypto = require('node:crypto');
 const path = require('node:path');
 const catalogue = JSON.parse(fs.readFileSync(path.join(__dirname, '../web/runtimes.local.json')));
 
+test('selection waits for delayed evidence without resetting a chosen release', async ({ page }) => {
+  let releaseEvidence;
+  const held = new Promise(resolve => { releaseEvidence = resolve; });
+  await page.route('**/evidence/wasi.json', async route => {
+    await held;
+    await route.continue();
+  });
+  await page.goto('/web/');
+  await expect(page.getByLabel('Runtime integration', { exact: true })).toBeDisabled();
+  await expect(page.getByLabel('Execution target')).toBeDisabled();
+  await expect(page.getByLabel('Elixir release', { exact: true })).toBeDisabled();
+  releaseEvidence();
+  await expect(page.getByLabel('Runtime integration', { exact: true })).toBeEnabled();
+  await page.getByLabel('Elixir release', { exact: true }).selectOption('1.0.0');
+  const result = await run(page, 'IO.puts("SELECTED=" <> System.version())');
+  expect(result.status).toMatch(/^Completed/);
+  expect(result.stdout).toContain('SELECTED=1.0.0');
+});
+
 async function run(page, source) {
   if (source !== null) await page.getByLabel('Elixir source code').fill(source);
   await page.getByRole('button', { name: 'Run Elixir' }).click();

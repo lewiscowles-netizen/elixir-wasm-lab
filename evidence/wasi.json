@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "time": "2026-09-30T05:08:56.049578+00:00",
+  "host": {
+    "version": "wasmtime 49.0.1 (46c23a87d 2026-09-24)",
+    "executableSha256": "112d2142b0119362ab17777a1a6319c42cbff63627dae90ac55aba84df4383cf"
+  },
+  "verifierSha256": "8e5ff1c4d621c0de8e558de5b4bbee34916ab5e3ad4556f7affdb2487181b83b",
+  "results": [
+    {
+      "version": "1.17.0",
+      "backend": "atomvm",
+      "target": "wasm32-wasip1",
+      "manifestSha256": "4d9ee938a21b99344184c4124e98d03fe2550f5bf68ac5162c84247d84bffc9a",
+      "imports": [
+        "args_get",
+        "args_sizes_get",
+        "clock_time_get",
+        "fd_close",
+        "fd_fdstat_get",
+        "fd_filestat_get",
+        "fd_prestat_get",
+        "fd_prestat_dir_name",
+        "fd_read",
+        "fd_readdir",
+        "fd_seek",
+        "fd_write",
+        "path_filestat_get",
+        "path_open",
+        "path_unlink_file",
+        "poll_oneoff",
+        "proc_exit"
+      ],
+      "cases": [
+        {
+          "name": "no-preopen-denies-program-loading",
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": "/bundle/program.avm: No such file or directory\nFailed opening /bundle/program.avm.\n",
+          "seconds": 0.017,
+          "status": "passed"
+        },
+        {
+          "name": "selected-program",
+          "exitCode": 0,
+          "stdout": "COMPILER=1.17.0\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=29\nFILE=denied\nESCAPE=denied\nESCAPE=denied\n",
+          "stderr": "Return value: ok\n",
+          "seconds": 0.043,
+          "status": "passed"
+        },
+        {
+          "name": "elixir-processes-timer-no-data-grant",
+          "exitCode": 0,
+          "stdout": "COMPILER=1.17.0\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=25\nFILE=denied\nESCAPE=denied\nESCAPE=denied\n",
+          "stderr": "Return value: ok\n",
+          "seconds": 0.045,
+          "status": "passed"
+        },
+        {
+          "name": "granted-file-and-denied-escapes",
+          "exitCode": 0,
+          "stdout": "COMPILER=1.17.0\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=28\nFILE=capability proof\nESCAPE=denied\nESCAPE=denied\n",
+          "stderr": "Return value: ok\n",
+          "seconds": 0.048,
+          "status": "passed"
+        },
+        {
+          "name": "elixir-error-is-host-failure",
+          "exitCode": 1,
+          "stdout": "COMPILER=1.17.0\n",
+          "stderr": "CRASH \n======\npid: <0.1.0>\n\nStacktrace:\n[{Elixir.WASIProbe,start,0,[]}]\n\ncp: #CP<module: 0, label: 13, offset: 12>\n\nx[0]: error\nx[1]: intentional_wasi_failure\nx[2]: {1,0,0,0,[{0,129}],error}\n\nStack \n-----\n\n#CP<module: 0, label: 20, offset: 0>\n\n\nMailbox\n-------\n\n\nMonitors\n--------\n\n\n**End Of Crash Report**\nReturn value: error\n",
+          "seconds": 0.018,
+          "status": "passed"
+        },
+        {
+          "name": "host-fuel-stops-infinite-program",
+          "exitCode": 134,
+          "stdout": "COMPILER=1.17.0\nLOOP_STARTED\n",
+          "stderr": "Error: failed to run main module `/Users/lewis.cowles/projects/personal/elixir-wasm-builder/builds/wasi-atomvm-1.17.0/AtomVM.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n    0:   0x6c75 - AtomVM.wasm!scheduler_entry_point\n    1:   0x64a5 - AtomVM.wasm!context_execute_loop\n    2:    0xc1f - AtomVM.wasm!main\n    3:  0x7dbc3 - AtomVM.wasm!__main_void\n    4:    0x8ba - AtomVM.wasm!_start\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: all fuel consumed by WebAssembly\n\n",
+          "seconds": 0.028,
+          "status": "passed"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "version": "1.17.3",
+      "backend": "atomvm",
+      "target": "wasm32-wasip1",
+      "manifestSha256": "45beaee446eecb43e1cccf99c92c1654910ec6335a9b78122184a03d77948d3f",
+      "imports": [
+        "args_get",
+        "args_sizes_get",
+        "clock_time_get",
+        "fd_close",
+        "fd_fdstat_get",
+        "fd_filestat_get",
+        "fd_prestat_get",
+        "fd_prestat_dir_name",
+        "fd_read",
+        "fd_readdir",
+        "fd_seek",
+        "fd_write",
+        "path_filestat_get",
+        "path_open",
+        "path_unlink_file",
+        "poll_oneoff",
+        "proc_exit"
+      ],
+      "cases": [
+        {
+          "name": "no-preopen-denies-program-loading",
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": "/bundle/program.avm: No such file or directory\nFailed opening /bundle/program.avm.\n",
+          "seconds": 0.016,
+          "status": "passed"
+        },
+        {
+          "name": "selected-program",
+          "exitCode": 0,
+          "stdout": "COMPILER=1.17.3\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=28\nFILE=denied\nESCAPE=denied\nESCAPE=denied\n",
+          "stderr": "Return value: ok\n",
+          "seconds": 0.046,
+          "status": "passed"
+        },
+        {
+          "name": "elixir-processes-timer-no-data-grant",
+          "exitCode": 0,
+          "stdout": "COMPILER=1.17.3\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=26\nFILE=denied\nESCAPE=denied\nESCAPE=denied\n",
+          "stderr": "Return value: ok\n",
+          "seconds": 0.043,
+          "status": "passed"
+        },
+        {
+          "name": "granted-file-and-denied-escapes",
+          "exitCode": 0,
+          "stdout": "COMPILER=1.17.3\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=26\nFILE=capability proof\nESCAPE=denied\nESCAPE=denied\n",
+          "stderr": "Return value: ok\n",
+          "seconds": 0.042,
+          "status": "passed"
+        },
+        {
+          "name": "elixir-error-is-host-failure",
+          "exitCode": 1,
+          "stdout": "COMPILER=1.17.3\n",
+          "stderr": "CRASH \n======\npid: <0.1.0>\n\nStacktrace:\n[{Elixir.WASIProbe,start,0,[]}]\n\ncp: #CP<module: 0, label: 13, offset: 12>\n\nx[0]: error\nx[1]: intentional_wasi_failure\nx[2]: {1,0,0,0,[{0,129}],error}\n\nStack \n-----\n\n#CP<module: 0, label: 20, offset: 0>\n\n\nMailbox\n-------\n\n\nMonitors\n--------\n\n\n**End Of Crash Report**\nReturn value: error\n",
+          "seconds": 0.016,
+          "status": "passed"
+        },
+        {
+          "name": "host-fuel-stops-infinite-program",
+          "exitCode": 134,
+          "stdout": "COMPILER=1.17.3\nLOOP_STARTED\n",
+          "stderr": "Error: failed to run main module `/Users/lewis.cowles/projects/personal/elixir-wasm-builder/builds/wasi-atomvm-1.17.3/AtomVM.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n    0:   0x6c75 - AtomVM.wasm!scheduler_entry_point\n    1:   0x64a5 - AtomVM.wasm!context_execute_loop\n    2:    0xc1f - AtomVM.wasm!main\n    3:  0x7dbc3 - AtomVM.wasm!__main_void\n    4:    0x8ba - AtomVM.wasm!_start\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: all fuel consumed by WebAssembly\n\n",
+          "seconds": 0.026,
+          "status": "passed"
+        }
+      ],
+      "status": "passed"
+    }
+  ]
+}

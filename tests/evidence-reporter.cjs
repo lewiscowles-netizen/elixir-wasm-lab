@@ -5,7 +5,7 @@ const crypto = require('node:crypto');
 module.exports = class EvidenceReporter {
   onBegin() {
     this.results = [];
-    this.sources = Object.fromEntries(['web/worker.mjs', 'web/atomvm-worker.mjs', 'web/popcorn-adapter.mjs', 'web/app.mjs', 'web/index.html', 'tests/browser.spec.cjs', 'tests/evidence-reporter.cjs', 'playwright.config.cjs', 'serve.py'].map(name => [name, crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname, '..', name))).digest('hex')]));
+    this.sources = Object.fromEntries(['web/worker.mjs', 'web/atomvm-worker.mjs', 'web/popcorn-adapter.mjs', 'web/app.mjs', 'web/index.html', 'web/style.css', 'tests/browser.spec.cjs', 'tests/evidence-reporter.cjs', 'playwright.config.cjs', 'serve.py'].map(name => [name, crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname, '..', name))).digest('hex')]));
   }
   onTestEnd(test, result) {
     const evidence = result.attachments.find(attachment => attachment.name === 'runtime-evidence');

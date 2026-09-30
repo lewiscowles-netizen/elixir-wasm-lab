@@ -25,8 +25,9 @@ function updateSelection() {
   const browser = $("target").value === "browser";
   const ready = Boolean(runtime?.directory) && browser && crossOriginIsolated;
   $("run").disabled = !ready || Boolean(worker);
+  $("timeout").disabled = !browser;
   $("runtime-info").textContent = runtime ? `Elixir ${runtime.version}${backend === "atomvm" ? " compiler" : ""} · ${runtime.application ? "bundled " + runtime.application + " project" : runtime.position + " stable patch in " + runtime.series} · ${runtime.directory ? (backend === "atomvm" ? "AtomVM " + runtime.runtimeVersion : "OTP " + runtime.otp) + (browser ? " / browser build available" : " / WASI command available") : runtime.status || "Source pinned; build not yet verified"}` : "No runtime selected.";
-  $("backend-info").textContent = { direct: "Direct OTP API: no Popcorn application framework or AtomVM. The OTP VM retains attributed Popcorn portability patches.", popcorn: "Popcorn 0.4 prerelease integration: OTP runtime, Popcorn JavaScript SDK and Elixir GenServer bridge.", atomvm: "Stock AtomVM: a smaller BEAM runtime with its own library subset. Programs are compiled before execution; no Popcorn code." }[backend];
+  $("backend-info").textContent = { direct: "Direct OTP API: no Popcorn application framework or AtomVM. The OTP VM retains attributed Popcorn portability patches.", popcorn: "Popcorn 0.4 prerelease integration: OTP runtime, Popcorn JavaScript SDK and Elixir GenServer bridge.", atomvm: (browser ? "Stock AtomVM" : "AtomVM WASI port") + ": a smaller BEAM runtime with its own library subset. Programs are compiled before execution; no Popcorn code." }[backend];
   $("execution-note").textContent = !browser ? "Run the downloaded command bundle in a WASI host. Browser execution is available under the Browser target." : backend === "atomvm" ? "This source is read-only because the imported program is already compiled. Rebuild with --backend atomvm --script to change it. Each run starts a fresh VM." : "Each run starts a fresh VM. Files are temporary. Execution uses your browser; no AI or compilation server is involved.";
   if (runtime?.profile === "historical-retarget") $("runtime-info").textContent += ` · compiled with OTP ${runtime.compilerOtp}, experimentally retargeted to OTP ${runtime.otp}`;
   if (runtime?.directory) $("runtime-info").textContent += runtime.proofStatus === "passed" ? (browser ? " · Chromium backend probes passed" : " · Wasmtime host probes passed") : runtime.proofStatus ? " · execution probe: " + runtime.proofStatus : " · execution test pending";
@@ -142,6 +143,8 @@ try {
     }
   }
   refreshCatalog();
+  $("backend").disabled = false;
+  $("target").disabled = false;
   $("status").textContent = "Ready.";
   updateSelection();
 } catch (error) {

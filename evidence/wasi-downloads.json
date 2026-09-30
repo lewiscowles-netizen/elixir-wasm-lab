@@ -1,0 +1,22 @@
+{
+  "time": "2026-09-30T05:15:30.075600+00:00",
+  "host": "wasmtime 49.0.1 (46c23a87d 2026-09-24)",
+  "results": [
+    {
+      "id": "wasi-atomvm-1.17.0",
+      "archiveSha256": "37097025c5226228902b2b55732985e9fdfa9e5fd2712273c5a6079ecf78d487",
+      "manifestSha256": "4d9ee938a21b99344184c4124e98d03fe2550f5bf68ac5162c84247d84bffc9a",
+      "status": "passed",
+      "stdout": "COMPILER=1.17.0\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=26\nFILE=denied\nESCAPE=denied\nESCAPE=denied\n",
+      "stderr": "Return value: ok\n"
+    },
+    {
+      "id": "wasi-atomvm-1.17.3",
+      "archiveSha256": "6139ee2243dc44913d56b61e23c2539a9e47c08b321132707b19ce18ad64c457",
+      "manifestSha256": "45beaee446eecb43e1cccf99c92c1654910ec6335a9b78122184a03d77948d3f",
+      "status": "passed",
+      "stdout": "COMPILER=1.17.3\nHello from Elixir on WASI\n{platform,wasi}\n{squares,[1,4,9]}\nMESSAGE=42\nTIMER_MS=27\nFILE=denied\nESCAPE=denied\nESCAPE=denied\n",
+      "stderr": "Return value: ok\n"
+    }
+  ]
+}
